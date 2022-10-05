@@ -1,0 +1,73 @@
+span{
+    color: lime;
+}
+
+/* Universal Selector */
+*{
+    /* color:blue; */
+}
+
+/* Tag/Element Selector */
+small{
+    color: #ffa3b5;
+}
+
+/* attribute Selector */
+a[title="Google"] {
+    color: red;
+}
+
+/* Id Selector */
+#idselector{
+    text-indent: 50px;
+    letter-spacing: 5px;
+    Pord-spacing: 5px;
+    line-height: 30px;
+}
+
+/* Class Selector */
+.classselector{
+    color: red;
+    font-style: italic;
+}
+
+div.classselector{
+    color: blueviolet;
+    font-style: normal;
+}
+
+/* descendent selector */
+
+.desc a{
+    color: red;
+}
+
+/* child selector */
+
+#child>a{
+    color: red;
+}
+
+/* pseudo selector */
+
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+    letter-spacing: 20px;
+}
+
+.pseudo:active {
+    color: green;
+}
+
+.pseudo:visited{
+    color: brown;
+}
+
+/* Target */
+:target {
+   border: 1px solid red;
+}
