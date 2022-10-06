@@ -21,7 +21,7 @@ a[title="Google"] {
 #idselector{
     text-indent: 50px;
     letter-spacing: 5px;
-    Pord-spacing: 5px;
+    word-spacing: 5px;
     line-height: 30px;
 }
 
@@ -50,11 +50,11 @@ div.classselector{
 
 /* pseudo selector */
 
-a:link {
+.pseudo:link {
     color: red;
 }
 
-a:hover {
+.pseudo:hover {
     color: blue;
     letter-spacing: 20px;
 }
@@ -70,4 +70,6 @@ a:hover {
 /* Target */
 :target {
    border: 1px solid red;
+   color: green;
+   background-color: black;
 }
