@@ -5,6 +5,8 @@ span{
 /* Universal Selector */
 *{
     /* color:blue; */
+    margin: 0%;
+    padding: 0%;
 }
 
 /* Tag/Element Selector */
@@ -72,4 +74,85 @@ div.classselector{
    border: 1px solid red;
    color: green;
    background-color: black;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+/* Border */
+.borderone{
+    border: 2px solid black;
+}
+
+.bordertwo{
+    border-top: 10px solid red;
+}
+
+.borderstyleone{
+    border-style: double;
+    border-color: blue;
+}
+
+.bordermix{
+    /* border-style: solid; */
+    /* All Four */
+    /* border-style: dashed double; */
+    /* T&B/ L&R */
+    /* border-style: dotted solid double; */
+    /* T / L&R / B */
+    border-style: dashed solid double dotted;
+    /* T / R / B / L */
+}
+
+.borderwidth{
+    border-style: solid;
+    border-width: 5px;
+}
+
+/* margin */
+.marginone{
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+.margintwo{
+    border: 1px solid red;
+    margin-left: 100px;
+}
+
+.paddingone{
+    border: 1px solid green;
+    /* padding: 50px; */
+    padding-top: 50px;
+}
+
+/* Layout */
+.inline{
+    border: 1px solid red;
+    width: 400px;
+    display: inline-block;
+}
+
+.block{
+    border: 1px solid black;
+    width: 400px;
+    display: inline-block;
+}
+
+.float_left img{
+    width: 40%;
+    float: left;
+    border-radius: 5px;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_right img{
+    width: 40%;
+    float: right;
+    height: 300px;
 }
