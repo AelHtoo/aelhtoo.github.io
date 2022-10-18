@@ -156,3 +156,85 @@ h1{
     float: right;
     height: 300px;
 }
+
+/* Grid */
+
+.gridone div,.gridtwo div,.gridthree div,.gridfour div{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.gridone,.gridtwo,.gridthree,.gridfour{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridtwo{
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    /* grid-gap: 40px; */
+}
+
+.columnadd{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.rowadd{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.relative_parent {
+    border: 1px solid red;
+    width: 1000px;
+    height: 400px;
+}
+
+.relative{
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.absolute_parent{
+    border: 1px solid green;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+
+.absolute{
+    border: 1px solid yellow;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+/* fonts */
+
+.online{
+    font-family: 'Secular One', sans-serif;
+}
+@font-face{
+    src: url(Fonts/Pacifico-Regular.ttf);
+    font-family: pacifico;
+}
+
+.offline{
+    font-family: pacifico;
+}
