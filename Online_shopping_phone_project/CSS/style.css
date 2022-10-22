@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav_bar div{
+    display: inline-block;
+}
+
+.nav_bar ul{
+    display: inline-block;
+    float: right;
+}
+
+.nav_bar ul li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+.nav_bar div a{
+    margin-top: 30px;
+    margin-left: 50px;
+    display: inline-block;
+    font-size: 24px;
+    text-decoration: none;
+    color:rgb(46, 130, 199);
+}
+
+.nav_item{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav_item:hover{
+    color:rgb(46, 130, 199);
+}
