@@ -8,7 +8,7 @@
 }
 
 .nav_bar ul{
-    display: inline-block;
+    /* display: inline-block; */
     float: right;
 }
 
@@ -24,15 +24,755 @@
     display: inline-block;
     font-size: 24px;
     text-decoration: none;
-    color:rgb(46, 130, 199);
+    color: #03565c;
 }
 
 .nav_item{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .nav_item:hover{
     color:rgb(46, 130, 199);
 }
+
+.noti{
+    position: relative;
+    top: -10px;
+    background-color: black;
+    color: white;
+    padding: 0px 7px;
+    border-radius: 60%;
+    left: -7px;
+}
+
+.nav_bar{
+    height: 90px;
+    box-shadow: 3px 3px 20px rgba(177, 226, 235, 0.3);
+}
+
+.bunner_img{
+    width: 100%;
+}
+
+.bunner_text{
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.bunner_text h1{
+    margin-bottom: 20px;
+}
+
+.shop_now{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+}
+
+.shop_now:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* Category */
+.header{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.category_center{
+    width: 700px;
+    margin: auto;
+}
+
+.category{
+    padding: 15px 25px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.category:hover{
+    background-color: #70bfc4;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+/* Arrival */
+.new_arrival_header{
+    border-left: 3px solid #70bfc4;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 40px;
+}
+
+/* new arrival */
+.new_arrival{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    grid-row-gap: 30px;
+}
+
+.new_arrival_icon{
+    padding: 10px;
+}
+
+.blog_header{
+    border-left: 3px solid #70bfc4;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-left: 40px;
+}
+
+
+/* blog */
+.blog{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-right: 70px;
+    grid-column-gap: 30px;
+}
+
+.blog_image{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    transition: .5s ease .3s;
+}
+
+.calendar{
+    color: #70bfc4;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blog_text{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.read_more{
+    color: #70bfc4;
+    margin-top: 10px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    text-decoration: none;
+}
+
+.blog div{
+    box-shadow: -3px 4px 5px rgb(116, 110, 105, .2);
+}
+
+.blog_image:hover{
+    transform: scale(1.3);
+}
+
+.blog_image_zoom{
+    width: 100%;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+/* avaliable */
+.avaliable_image{
+    display: inline-block;
+    width: 220px;
+    height: 200px;
+    background-image: url(../Images/Image20221022214424.png);
+    transition-duration: .6s;
+}
+
+.avaliable_image:hover{
+    background-image: url(../Images/Image20221023205303.png);
+    width: 220px;
+    height: 200px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.more_item{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.more_item a{
+    color: #70bfc4;
+}
+
+/* support */
+.support div p{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.support{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgb(177, 174, 176,.5);
+}
+
+.support div p b{
+    font-size: 24px;
+}
+
+.support_in_contact{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 30px;
+    background-color: rgb(177, 174, 176,.5);
+}
+
+.support_in_contact div p b{
+    font-size: 24px;
+}
+
+/* footer */
+.footer{
+    background-color: black;
+    padding-top: 50px;
+}
+
+.footer_nav{
+    color: grey;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.designed{
+    color: grey;
+    margin-top: 20px;
+}
+
+.footer_icon{
+    color: grey;
+    display: inline-block;
+    margin: 20px 10px 50px;
+}
+
+b{
+    font-size: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+
+/* contact */
+
+.start_contact{
+    background-color: #5fbac0;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+.contact_header{
+    text-transform: uppercase;
+    border-bottom: #70bfc4 solid;
+    margin: 20px 150px 10px 150px;
+    padding-bottom: 10px;
+}
+
+.contact_note{
+    font-size: 20px;
+    word-spacing: 10px;
+}
+
+center p{
+    margin-bottom: 50px;
+}
+
+.contact{
+    margin-left: 200px;
+    width: 400px;
+    height: 25px;
+    border: none;
+}
+
+.contact:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+textarea{
+    margin-left: 200px;
+    width: 400px;
+    border: none;
+}
+
+textarea:focus{
+    outline: none;
+    border: 1px solid white;
+}
+
+.contact_send{
+    width: 200px;
+    margin-left: 250px;
+    padding: 10px;
+    border: 1px solid #70bfc4;
+}
+
+.contact_send:hover{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.contact_us_one{
+    display: inline-block;
+    position: absolute;
+    top: 280px;
+    right: 400px;
+}
+
+.contact_us_one a{
+    text-decoration: none;
+    color: black;
+    padding-left: 50px;
+}
+
+.contact_us_two{
+    display: inline-block;
+    position: absolute;
+    top: 340px;
+    right: 420px;
+}
+
+.contact_us_two a{
+    text-decoration: none;
+    color: black;
+    padding-left: 50px;
+}
+
+.contact_us_three{
+    display: inline-block;
+    position: absolute;
+    top: 390px;
+    right: 385px;
+}
+
+.contact_us_three a{
+    text-decoration: none;
+    color: black;
+    padding-left: 50px;
+}
+
+.contact_us_four a{
+    display: inline-block;
+    position: absolute;
+    top: 440px;
+    right: 500px;
+    text-decoration: none;
+    color: black;
+}
+
+.contact_us_five a{
+    display: inline-block;
+    position: absolute;
+    top: 440px;
+    right: 450px;
+    text-decoration: none;
+    color: black;
+}
+
+.contact_us_six a{
+    display: inline-block;
+    position: absolute;
+    top: 440px;
+    right: 400px;
+    text-decoration: none;
+    color: black;
+}
+
+.contact_us{
+    border-bottom: #70bfc4 solid;
+    margin-left: 700px;
+    margin-right: 150px;
+}
+
+.text{
+    float: right;
+    margin-top: 30px;
+}
+
+/* Service */
+
+.repair_service{
+    width: 40%;
+    float: right;
+    height: 350px;
+    margin-right: 100px;
+    margin-top: 60px;
+}
+
+.warrantly{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    position: absolute;
+    top: 320px;
+    left: 400px;
+}
+
+.repair_header{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 200px;
+    color: #03565c;
+}
+
+.repair_header_text{
+    margin-left: 220px;
+    margin-top: 20px;
+    color: #03565c;
+}
+
+.repair_info{
+    margin-left: 220px;
+    margin-top: 20px;
+    color: #03565c;
+}
+
+.repair_discount{
+    margin-top: 20px;
+    margin-left: 220px;
+    color: rgb(28, 86, 139);
+}
+
+.repair_text{
+    margin-top: 20px;
+    margin-left: 220px;
+    width: 300px;
+    color: rgb(22, 57, 211);
+    border: 1px solid green;
+    padding: 20px;
+}
+
+.warning{
+    padding-right: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+.deli_header{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 100px;
+    color: #03565c;
+}
+
+.deli_img{
+    width: 40%;
+    float: left;
+    margin-top: 50px;
+    height: 300px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+.deli_text{
+    margin-top: 20px;
+    color: #03565c;
+    display: inline-block;
+}
+
+.deli_where{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #03565c;
+}
+
+/* blog */
+/* mobile phone  */
+.phone_evolution{
+    width: 40%;
+    float: left;
+    margin: 50px 20px 20px 50px;
+    height: 300px;
+}
+
+.mobile{
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 30px;
+    margin: 0px 30px 0px 30px;
+}
+
+.back_page{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 50px;
+    color:#03565c;
+}
+
+.back_page:active{
+    color: red;
+}
+
+.martin{
+    width: 40%;
+    float: left;
+    margin: 50px 20px 20px 50px;
+    height: 400px;
+}
+
+/* blog page */
+.mobile_phone_blog{
+    box-shadow: 6px 6px 20px rgb(103, 109, 117,.2);
+    margin: 50px 100px 10px;
+}
+
+.mobile_blog_img{
+    width: 400px;
+    height: 233px;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.mobile_blog_text{
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.mobile_blog_header{
+    color: #03565c;
+    text-align: center;
+    border-bottom: 2px solid #70bfc4;
+    margin: 50px 50px 20px;
+    padding-bottom: 20px;
+}
+
+.other_blog{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-right: 70px;
+}
+
+.other_blog div h3{
+    padding-left: 10px;
+    margin-top: 10px;
+    color: #03565c;
+}
+
+.other_blog_img1,.other_blog_img2,.other_blog_img3{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    transition: .5s ease .3s;
+}
+
+.other_blog_img1{
+    height: 350px;
+}
+
+.other_blog_img3{
+    height: 280px;
+}
+
+.other_blog_text{
+    text-align: justify;
+    line-height: 20px;
+    padding: 5px 10px 20px 10px;
+}
+
+.other_blog div{
+    box-shadow: -3px 4px 6px rgb(78, 78, 76, 0.2);
+}
+
+.other_blog_img1:hover,.other_blog_img2:hover,.other_blog_img3:hover{
+    transform: scale(1.1);
+}
+
+.other_blog_img{
+    width: 100%;
+    height: 350px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.other_blog_img22{
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.other_blog_img33{
+    width: 100%;
+    height: 280px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+/* about_us */
+.about_us_img{
+    width: 100%;
+}
+
+.about_us_text{
+    width: 50%;
+    text-align: justify;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.about_us{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+.about_us_page{
+    display: inline-block;
+    padding: 20px;
+}
+
+.about_us_page button{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+.about_us_page button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.our_promise_header{
+    text-align: center;
+    margin-top: 50px;
+    color: #03565c;
+}
+
+.our_promise{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    grid-column-gap: 30px;
+    margin: 30px 50px 0px 50px;
+    background-color: rgb(14, 106, 191);
+    border-radius: 10px;
+}
+
+.our_promise_text{
+    margin-top: 20px;
+    color: rgb(26, 25, 25);
+    line-height: 20px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.our_promise div h3{
+    margin-top: 75px;
+    color: white;
+}
+
+
+/* product  */
+
+
+.product_bar{
+    list-style-type: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 0%;
+    border: 1px solid #e7e7e7;
+}
+
+.product_bar li{
+    float: left;
+}
+
+.product_bar li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #666;
+    text-align: center;
+}
+
+.product_bar li a:hover{
+    background-color: #03565c;
+    color: white;
+}
+
+.product_bar li a:active{
+    background-color: blue;
+}
+
+.product_header{
+    text-align: center;
+    color: #03565c;
+    border-bottom: 5px solid red;
+    margin: 50px 100px 30px 100px;
+    padding-bottom: 20px;
+}
+
+.all_iphone{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 30px;
+    margin: 50px ;
+}
+
+.iphone_series{
+    text-align: center;
+    line-height: 20px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+}
+
+.iphone_series:hover{
+    box-shadow: -5px 5px 7px gray;
+    cursor: pointer;
+}
+
+.product_detail{
+    opacity: 0;
+}
+
+.product_detail:hover{
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
