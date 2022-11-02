@@ -365,10 +365,13 @@
 
 .promotion_header{
     text-align: center;
-    color: rgb(51, 52, 53);
-    padding-bottom: 20px;
+    color: red;
+    font-size: 30px;
+    padding-bottom: 10px;
     border-bottom: 8px solid gray;
-    margin: 30px 200px 40px;
+    margin: 80px 150px 40px;
+    border-top: 8px solid gray;
+    padding-top: 10px;
 }
 
 .promotion_item{
@@ -376,10 +379,15 @@
     border: 1px solid rgb(243, 242, 242);
 }
 
+.promotion_item:hover{
+    box-shadow: 5px 7px 10px rgb(182, 176, 176);
+}
+
 .promotion_item h3{
     text-align: center;
     color: rgb(75, 73, 73);
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .promotion_item p{
@@ -392,6 +400,10 @@
     border: 1px solid gray;
     width: 95%;
     height: 300px;
+}
+
+.promotion_item img:hover{
+    transform: scale(1.05);
 }
 
 .promotion_item div{
@@ -415,7 +427,7 @@
 
 .promotion_button2{
     padding: 10px;
-    margin-right: 7px;
+    margin-right: 3px;
     border: 1px solid gray;
     display: inline-block;
     margin-top: 10px;
@@ -425,6 +437,10 @@
     color: white;
     background-color: gray;
     margin-bottom: 20px;
+}
+
+.promotion_button1:hover,.promotion_button2:hover{
+    background-color: red;
 }
 
 .price1{
@@ -445,10 +461,10 @@
     background-color: red;
     color: white;
     padding: 15px;
-    border-radius: 50%;
+    border-radius: 100%;
     position: relative;
     top: -288px;
-    left: 72px;
+    left: 75px;
 }
 
 .promotion{
