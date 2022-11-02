@@ -1,0 +1,457 @@
+@font-face {
+    font-family: RobotoSlab;
+    src: url(Fonts/RobotoSlab-VariableFont_wght.ttf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: RobotoSlab;
+}
+
+/* navigation */
+.navforall{
+    background-color: rgb(73, 71, 71);
+    box-shadow: 3px 5px 7px rgb(233, 235, 230);
+}
+
+.navforall div{
+    display: inline-block;
+}
+
+.navforall div img{
+    float: left;
+    margin-left: 100px;
+}
+
+.navforall div h2{
+    float: left;
+    margin-top: 20px;
+    color: rgb(182, 176, 176);
+}
+
+.navforall ul{
+    float: right;
+}
+
+.navforall ul li{
+    display: inline-block;
+    margin: 20px 30px 20px 0px;
+    padding-top: 5px;
+}
+
+.navforall ul li a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+}
+
+.button{
+    float: right;
+    padding: 10px;
+    margin-top: 19px;
+    margin-right: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+.navforall ul li a:hover{
+    color: red;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}
+
+.bgpic{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(Images/read-book-books-book-store.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navi h2{
+    float: left;
+    margin-top: 20px;
+    color: rgb(182, 176, 176);
+}
+
+.navi img{
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-left: 100px;
+}
+
+.nav_bar{
+    float: right;
+}
+
+.item{
+    display: inline-block;
+}
+
+.item li{
+    display: inline-block;
+    margin: 20px 30px 20px 0px;
+    padding-top: 5px;
+}
+
+.item li a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: white;
+}
+
+.cart{
+    padding: 10px;
+    margin-right: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+.item li a:hover{
+    color: red;
+}
+
+.cart:hover{
+    background-color: black;
+    color: white;
+}
+
+.quote{
+    color: white;
+    position: relative;
+    top: 200px;
+}
+
+.quote_text{
+    position: absolute;
+    left: 100px;
+    top: 40px;
+}
+
+.quote_text2{
+    position: absolute;
+    left: 100px;
+    top: 80px;
+    line-height: 20px;
+}
+
+.shopnow{
+    position: absolute;
+    left: 130px;
+    top: 140px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.shopnow:hover{
+    background-color: black;
+    border: none;
+}
+
+/* My Account */
+
+.my_account{
+    background-image: url(Images/signin\ singup\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.sign_in>input{
+    border: 1px solid gray;
+    padding: 8px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.sign_in input:focus{
+    font-weight: bold;
+    color: black;
+}
+
+.sign_in{
+    background-color: white;
+    opacity: 0.6;
+    border: 5px solid black;
+    width: 500px;
+    padding-left: 50px;
+    position: relative;
+    top: 100px;
+    left: 400px;
+    border-radius: 40px;
+}
+
+.sign_in_email{
+    padding: 20px 30px 20px 70px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.sign_in_password{
+    padding: 10px 30px 20px 40px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.sign_in div{
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 30px 50px 0px 180px;
+}
+
+.sign_up_name{
+    padding: 20px 30px 20px 70px;
+    display: inline-block;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.sign_up_email{
+    padding: 10px 30px 20px 70px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.sign_in button{
+    padding: 15px;
+    margin-left: 150px;
+    width: 150px;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    border: none;
+    margin-bottom: 50px;
+    display: inline-block;
+    font-size: large;
+}
+
+.sign_in button:hover{
+    background-color: black;
+    color: white;
+}
+
+.sign_in>a{
+    display: block;
+    font-weight: bold;
+    font-size: small;
+    color: black;
+    margin-left: 350px;
+    margin-bottom: 20px;
+}
+
+.notice{
+    font-size: smaller;
+    padding-left: 170px;
+    color: black;
+    font-weight: bold;
+}
+
+.gender input{
+    width: 30px;
+}
+
+.gender input:checked + label{
+    font-weight: bold;
+}
+
+.sign_up_bg{
+    background-image: url(Images/signin\ singup\ bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 130vh;
+}
+
+
+/* contact  */
+.contact{
+    width: 600px;
+    border: 3px solid gray;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 0.7;
+}
+
+.contact h2{
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.contact p{
+    padding-left: 80px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
+.contact input{
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 400px;
+    padding: 7px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contact textarea{
+    width: 400px;
+    padding: 7px;
+    border-radius: 11px;
+    margin-left: 80px;
+    margin-top: 10px;
+    border: 2px solid gray;
+}
+
+.contact input:focus{
+    border: 2px solid black;
+}
+
+.contact button{
+    padding: 10px;
+    width: 100px;
+    border-radius: 50px;
+    color: white;
+    background-color: red;
+    border: none;
+    margin-left: 240px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.contact button:hover{
+    background-color: black;
+}
+
+.map{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+    top: -500px;
+    left: 780px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.contact_bg{
+    background-image: url(Images/pexels-pixabay-2150.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 110vh;
+}
+
+/* index */
+
+.promotion_header{
+    text-align: center;
+    color: rgb(51, 52, 53);
+    padding-bottom: 20px;
+    border-bottom: 8px solid gray;
+    margin: 30px 200px 40px;
+}
+
+.promotion_item{
+    margin-top: 50px;
+    border: 1px solid rgb(243, 242, 242);
+}
+
+.promotion_item h3{
+    text-align: center;
+    color: rgb(75, 73, 73);
+    margin-bottom: 10px;
+}
+
+.promotion_item p{
+    text-align: center;
+    color: rgb(51, 52, 53,.9);
+    margin-bottom: 10px;
+}
+
+.promotion_item img{
+    border: 1px solid gray;
+    width: 95%;
+    height: 300px;
+}
+
+.promotion_item div{
+    text-align: center;
+}
+
+
+.promotion_button1{
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid gray;
+    display: inline-block;
+    margin-top: 10px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+
+.promotion_button2{
+    padding: 10px;
+    margin-right: 7px;
+    border: 1px solid gray;
+    display: inline-block;
+    margin-top: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+
+.price1{
+    display: inline-block;
+    font-size: larger;
+    color: red;
+    font-weight: bold;
+}
+
+.price2{
+    display: inline-block;
+    padding-left: 10px;
+    text-decoration: line-through;
+}
+
+.discount{
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    position: relative;
+    top: -288px;
+    left: 72px;
+}
+
+.promotion{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
