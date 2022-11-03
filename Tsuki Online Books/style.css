@@ -167,7 +167,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
 }
 
 .sign_in>input{
@@ -273,7 +273,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 130vh;
+    height: 150vh;
 }
 
 
@@ -358,7 +358,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 110vh;
+    height: 130vh;
 }
 
 /* index */
@@ -460,8 +460,8 @@
     border: 1px solid red;
     background-color: red;
     color: white;
-    padding: 15px;
-    border-radius: 100%;
+    padding: 10px;
+    border-radius: 50%;
     position: relative;
     top: -288px;
     left: 75px;
@@ -470,4 +470,105 @@
 .promotion{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
+}
+
+.view_more{
+    font-size: large;
+    display: inline-block;
+    margin-left: 620px;
+    margin-top: 30px;
+    color: gray;
+}
+
+.view_more:hover{
+    color: red;
+}
+
+/* footer  */
+
+.footer{
+    background-color: rgb(75, 73, 73);
+}
+
+.footer ul li{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 80px;
+    position: relative;
+    left: 280px;
+}
+
+.footer ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.footer ul li a:hover{
+    color: red;
+}
+
+.footer_icon{
+    margin-left: 380px;
+}
+
+.footer_icon span a{
+    padding-left: 100px;
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.footer_icon span a:hover{
+    color: red;
+}
+
+.footer p{
+    color: rgb(190, 187, 187);
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* about us */
+.about_us{
+    background-image: url(Images/aboutus.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.about_us h1{
+    color: rgb(63, 62, 62);
+    padding-top: 100px;
+    text-align: center;
+}
+
+.about_us div{
+    width: 50%;
+    padding-left: 400px;
+    text-align: justify;
+    font-size: 18px;
+    padding-top: 30px;
+    line-height: 30px;
+    text-indent: 100px;
+    color: rgb(41, 40, 40);
+}
+
+.about_us div button{
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: none;
+    margin-top: 30px;
+    margin-left: 220px;
+    width: 100px;
+}
+
+.about_us div button:hover{
+    background-color: red;
 }
