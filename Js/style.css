@@ -2,3 +2,15 @@ h1{
     color: red;
     text-align: center;
 }
+
+#time{
+    border: 1px solid black;
+    width: 120px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: black;
+    color: green;
+    border-radius: 20px;
+}
