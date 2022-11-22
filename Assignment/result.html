@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="../Js/style.css">
+</head>
+<body>
+    <h1>Result</h1>
+    <form action="" method="post">
+        Name : <input type="text" name="stu_name" id="stu_name"><span></span><br>
+        Myanmar : <input type="number" name="myanmar" id="myanmar"><span></span><br>
+        English : <input type="number" name="english" id="english"><span></span><br>
+        Mathematics : <input type="number" name="math" id="math"><span></span><br>
+        Chemistry : <input type="number" name="chem" id="chem"><span></span><br>
+        Physics : <input type="number" name="phy" id="phy"><span></span><br>
+        Biology : <input type="number" name="bio" id="bio"><span></span><br>
+        <button onclick="result()" type="button">Result</button>
+    </form>
+    <br><br><br>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Myanmar</th>
+            <th>English</th>
+            <th>Mathematics</th>
+            <th>Chemistry</th>
+            <th>Physics</th>
+            <th>Bio</th>
+            <th>Total</th>
+            <th>Result</th>
+        </thead>
+        <tbody id="myData">
+
+        </tbody>
+    </table>
+
+    <script>
+        let studentResult = [];
+        function result() {
+            // alert('ok');
+            let name = document.getElementById('stu_name').value;
+            let myan = document.getElementById('myanmar').value;
+            let eng = document.getElementById('english').value;
+            let math = document.getElementById('math').value;
+            let chem = document.getElementById('chem').value;
+            let phy = document.getElementById('phy').value;
+            let bio = document.getElementById('bio').value;
+            console.log(name,myan,eng,math,chem,phy,bio);
+            let total = 0;
+            total = parseInt(myan) + parseInt(eng) + parseInt(math) + parseInt(chem) + parseInt(phy) + parseInt(bio);
+            // console.log(total);
+                
+            
+            let student = {
+                studentName : name ,
+                studentMyan : myan ,
+                studentEng : eng ,
+                studentMath : math ,
+                studentChem : chem ,
+                studentPhy : phy ,
+                studentBio : bio ,
+                studentTotal : total ,
+            }
+
+
+            // console.log(student);
+            studentResult.push(student);
+            // console.log(studentResult.length);
+            let data = '';
+            for (let i = 0; i < studentResult.length; i++) {
+                // console.log(studentResult[i]);
+                let studenList = studentResult[i];
+                data = data +   `
+                                <tr>
+                                    <td>${i+1}</td>
+                                    <td>${studenList.studentName}</td>
+                                    <td>${studenList.studentMyan}</td>
+                                    <td>${studenList.studentEng}</td>
+                                    <td>${studenList.studentMath}</td>
+                                    <td>${studenList.studentChem}</td>
+                                    <td>${studenList.studentPhy}</td>
+                                    <td>${studenList.studentBio}</td>
+                                    <td>${studenList.studentTotal}</td>
+                                    <td></td>
+                                </tr>
+                                `
+            }
+
+            document.getElementById('myData').innerHTML = data;
+
+            if (name.length<3) {
+                // alert('Name required at least 4 Char');
+                let name_error = document.querySelector('span');
+                name_error.innerHTML = "Name required at least 4 Char";
+                name_error.style.color = 'red';
+                return false;
+            }
+        }
+
+
+    </script>
+</body>
+</html>

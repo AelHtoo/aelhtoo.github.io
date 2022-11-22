@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Validation</h1>
+    <form action="register.php" method="get" onsubmit="return checkValue()">
+        Name : <input type="text" id="name" name="name"><br>
+        Password : <input type="password" id="password" name="password"><br>
+        Confirm Password : <input type="password" id="confirm_password" name="confirm_password"><br>
+        <input type="submit" value="save">
+    </form>
+
+    <script>
+        function checkValue() {
+            // alert('ok');
+            let name = document.getElementById('name').value;
+            let password = document.getElementById('password').value;
+            let confirm_password = document.getElementById('confirm_password').value;
+            
+            if (name.length < 3) {
+                alert('Name required at least 4 Char');
+                let name_error = document.getElementById('name');
+                name_error.style.border = '5px solid red';
+                return false;
+            }
+
+            if (password == "" || confirm_password == "") {
+                alert('Please Fill Password and Confirm Password First');
+                return false;
+            }
+
+            if (password != confirm_password) {
+                alert('Does not Match');
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
