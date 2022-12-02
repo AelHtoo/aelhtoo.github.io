@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Register</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-danger text-center my-5">Student Register</h1>
+
+    <div class="container">
+        <form action="create.php" method="post">
+            <div class="row">
+                <div class="offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="number" class="form-control" id="phone">
+                    </div>
+
+                    <label for="gender" class="form-label d-block">Gender</label>
+                    <div class="form-check-inline">
+                        <input type="radio" name="gender" id="male" class="form-check-input">
+                        <label for="male" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input type="radio" name="gender" id="female" class="form-check-input">
+                        <label for="female" class="form-check-label">Female</label>
+                    </div>
+
+                    <label for="" class="d-block form-label mt-3">Knowledge</label>
+                    <div class="form-check">
+                        <input type="checkbox" name="html" id="html" class="form-check-input">
+                        <label for="html" class="form-check-label">HTML</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="css" id="css" class="form-check-input">
+                        <label for="css" class="form-check-label">CSS</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="javascript" id="javascript" class="form-check-input">
+                        <label for="javascript" class="form-check-label">JavaScript</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="jquery" id="jquery" class="form-check-input">
+                        <label for="jquery" class="form-check-label">jQuery</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="database" id="database" class="form-check-input">
+                        <label for="database" class="form-check-label">Database</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="php" id="php" class="form-check-input">
+                        <label for="php" class="form-check-label">PHP</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" name="laravel" id="laravel" class="form-check-input">
+                        <label for="laravel" class="form-check-label">Laravel</label>
+                    </div>
+
+                    <label for="" class="mt-4 form-label ">Graduate</label>
+                    <select name="graduate" id="" class="form-select form-select-md mb-4">
+                        <option value="1">First Year</option>
+                        <option value="2">Second Year</option>
+                        <option value="3">Third Year</option>
+                        <option value="4">Fourth Year</option>
+                        <option value="5">Final Year</option>
+                    </select>
+
+                    <div>
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" class="form-control"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success float-end my-4">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
