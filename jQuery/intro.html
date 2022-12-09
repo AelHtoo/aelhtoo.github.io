@@ -7,9 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <script src="jquery.min.js">
+    <h1>jQuery Intro</h1>
 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+
+    <script src="jquery.min.js"></script>
+
+    <script>
+        alert('Hello World');
+
+        // jQuery (selector)
+        // $(selector).action()
+        // jQuery(document)
+
+        //Nameless Function
+
+        let fun = function () {
+        let h1 = document.querySelector('h1');
+        console.log(h1);
+        }
+        fun();
+
+        $(document).ready(function(){
+            alert('Hello jQuery');
+        })
     </script>
 </body>
 </html>
