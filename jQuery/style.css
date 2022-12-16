@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.check_out a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+.check_out{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.bt{
+    display: inline-block;
+    padding : 3px;
+    vertical-align: middle;
+    width: 30px;
+    border-radius: 3px;
+}
+
+.total{
+    text-align: center;
+    font-weight: bolder;
+}

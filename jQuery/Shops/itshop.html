@@ -18,7 +18,11 @@
             <ul class="navbar-nav ms-auto me-5">
                 <li class="nav-item" style="font-size: larger;"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item" style="font-size: larger;"><a href="" class="nav-link">Products</a></li>
-                <li class="nav-item" style="font-size: larger;"><a href="" class="nav-link">Cart</a></li>
+                <li class="nav-item" style="font-size: larger;"><a href="cart.html" class="nav-link">
+                    <button type="button" class="btn btn-secondary position-relative">
+                        Cart <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count_number"></span>
+                      </button>
+                </a></li>
             </ul>
         </div>
     </nav>
@@ -33,7 +37,7 @@
                     <img src="../Images/Laptop Go 10thGen Intel Core i5-12.4'.jpg" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Microsoft</h5>
                     <p class="ms-3">Price : 1,200,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="1" data-name="Microsoft" data-price="1200000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -41,7 +45,7 @@
                     <img src="../Images/Laptop Go 10thGen Intel Core i5-12.4'.jpg" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Lenovo</h5>
                     <p class="ms-3">Price : 670,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="2" data-name="Lenovo" data-price="6700000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -49,7 +53,7 @@
                     <img src="../Images/Laptop Go 10thGen Intel Core i5-12.4'.jpg" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Samsung</h5>
                     <p class="ms-3">Price : 950,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="3" data-name="Samsung" data-price="950000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -57,7 +61,7 @@
                     <img src="../Images/Laptop Go 10thGen Intel Core i5-12.4'.jpg" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Dell</h5>
                     <p class="ms-3">Price : 560,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="4" data-name="Dell" data-price="5600000">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -70,7 +74,7 @@
                     <img src="../Images/LosAngeles_SandGold_001.webp" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Urbanista</h5>
                     <p class="ms-3">Price : 60,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="5" data-name="Urbanista" data-price="600000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -78,7 +82,7 @@
                     <img src="../Images/LosAngeles_SandGold_001.webp" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Sony</h5>
                     <p class="ms-3">Price : 70,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="6" data-name="Sony" data-price="700000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -86,7 +90,7 @@
                     <img src="../Images/LosAngeles_SandGold_001.webp" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Apple</h5>
                     <p class="ms-3">Price : 88,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="7" data-name="Apple" data-price="880000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -94,7 +98,7 @@
                     <img src="../Images/LosAngeles_SandGold_001.webp" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Jabra</h5>
                     <p class="ms-3">Price : 30,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="8" data-name="Jabra" data-price="30000">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -108,7 +112,7 @@
                     <img src="../Images/71lI0RJAInL.jpg" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : KOPJIPPOM</h5>
                     <p class="ms-3">Price : 15,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="9" data-name="KOPJIPPOM" data-price="150000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -116,7 +120,7 @@
                     <img src="../Images/71lI0RJAInL.jpg" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name :  Logitech</h5>
                     <p class="ms-3">Price : 10,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="10" data-name="Logitech" data-price="10000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -124,7 +128,7 @@
                     <img src="../Images/71lI0RJAInL.jpg" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : HP</h5>
                     <p class="ms-3">Price : 18,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="11" data-name="Microsoft" data-price="18000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -132,7 +136,7 @@
                     <img src="../Images/71lI0RJAInL.jpg" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Hoco</h5>
                     <p class="ms-3">Price : 9,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="12" data-name="Hoco" data-price="9000">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -146,7 +150,7 @@
                     <img src="../Images/lenovo-tablet-lenovo-tab-p12-pro-subseries-hero.webp" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Lenovo</h5>
                     <p class="ms-3">Price : 450,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="13" data-name="Lenovo" data-price="4500000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -154,7 +158,7 @@
                     <img src="../Images/lenovo-tablet-lenovo-tab-p12-pro-subseries-hero.webp" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name :  Huawei</h5>
                     <p class="ms-3">Price : 200,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="14" data-name="Huawei" data-price="200000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -162,7 +166,7 @@
                     <img src="../Images/lenovo-tablet-lenovo-tab-p12-pro-subseries-hero.webp" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Samsung</h5>
                     <p class="ms-3">Price : 580,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="15" data-name="Samsung" data-price="5800000">Add to Cart</button>
                 </div>
             </div>
             <div class="column mb-4">
@@ -170,7 +174,7 @@
                     <img src="../Images/lenovo-tablet-lenovo-tab-p12-pro-subseries-hero.webp" alt="" class="card-img-top img-fluid">
                     <h5 class="ms-3">Name : Kenbo</h5>
                     <p class="ms-3">Price : 130,000MMK</p>
-                    <button class="btn btn-outline-primary">Add to Cart</button>
+                    <button class="btn btn-outline-primary addToCart" data-id="16" data-name="Kenbo" data-price="1300000">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -184,5 +188,66 @@
 
     <script src="../jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            count();
+            $(".addToCart").click(function (e) { 
+                e.preventDefault();
+                let id = $(this).data('id');
+                let name = $(this).data('name');
+                let price = $(this).data('price');
+                
+                console.log(id,name,price);
+
+                let items = {
+                    item_id : id,
+                    item_name : name,
+                    item_price : price,
+                    qty : 1,
+                };
+
+                let itemString = localStorage.getItem('shops');
+                let itemArray;
+                if (itemString == null) {
+                    itemArray = [];
+                }else{
+                    itemArray = JSON.parse(itemString);
+                }
+
+                var status = false;
+                $.each(itemArray, function (i,v) { 
+                    if (id == v.item_id) {
+                        status = true;
+                        v.qty++;
+                    }
+                });
+
+                if (status == false) {
+                    itemArray.push(items);
+                }
+                
+                let itemData = JSON.stringify(itemArray);
+                localStorage.setItem('shops',itemData);
+                count()
+            });
+
+            function count() {
+                let itemString = localStorage.getItem('shops');
+                if (itemString) {
+                    let itemArray = JSON.parse(itemString);
+                    
+                    if (itemArray != 0) {
+                        let count = itemArray.length;
+
+                        // let count = 0;
+                        // $.each(itemArray, function(i,v){
+                        //     count += v.qty;
+                        // })
+                        $("#count_number").text(count);
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>

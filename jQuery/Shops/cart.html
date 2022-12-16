@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="check_out">
+        <a href="itshop.html"><h3>Home |</h3></a>
+        <a href=""><h3>Checkout( <span id="count_number"></span> )</h3></a>
+    </div>
+
+    <div class="table-responsive my-4">
+        <table class="table table-striped">
+            <thead class="table-primary">
+                <tr>
+                    <th>No.</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                    <th>Qty</th>
+                    <th>Sub-Total</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+            <tfoot id="tfoot">
+                
+            </tfoot>
+        </table>
+
+        <div class="container">
+            <div class="row">
+                <div class="col offset-5">
+                    <button class="btn btn-info order">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let itemString = localStorage.getItem('shops');
+            if (itemString) {
+                let itemArray = JSON.parse(itemString); 
+                let j =1;
+                let data = '';  
+                if (itemArray != 0) {
+                    let count = itemArray.length;
+                    // let count = 0;
+                    // $.each(itemArray, function(i,v){
+                    //     count += v.qty;
+                    // })
+                    $("#count_number").text(count);
+                }
+
+                $.each(itemArray , function(i,v){
+                    data += `<tr>
+                                <td>${j++}</td>
+                                <td>${v.item_name}</td>
+                                <td>${v.item_price}</td>
+                                <td><button class="bt">+</button> ${v.qty} <button class="bt">-</button></td>
+                                <td>${v.item_price * v.qty} MMK</td>
+                        </tr>`
+                })
+                let total = 0;
+                total = `<tr>
+                        <td colspan="4" class="total">Total</td>
+                        <td></td>
+                        </tr>`
+                $('#tbody').html(data);
+                $('#tfoot').html(total);
+            }
+
+            
+        });
+    </script>
+</body>
+</html>
