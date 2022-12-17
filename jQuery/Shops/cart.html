@@ -9,10 +9,25 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="check_out">
-        <a href="itshop.html"><h3>Home |</h3></a>
-        <a href=""><h3>Checkout( <span id="count_number"></span> )</h3></a>
-    </div>
+    <!-- Nav bar start -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary shadow">
+        <a href="" class="navbar-brand me-auto ms-5">IT SHOP</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav ms-auto me-5">
+                <li class="nav-item" style="font-size: larger;"><a href="itshop.html" class="nav-link">Home</a></li>
+                <li class="nav-item" style="font-size: larger;"><a href="" class="nav-link">Products</a></li>
+                <li class="nav-item" style="font-size: larger;"><a href="cart.html" class="nav-link">
+                    <button type="button" class="btn btn-secondary position-relative">
+                        Cart <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count_number"></span>
+                      </button>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end  -->
 
     <div class="table-responsive my-4">
         <table class="table table-striped">
@@ -28,15 +43,12 @@
             <tbody id="tbody">
 
             </tbody>
-            <tfoot id="tfoot">
-                
-            </tfoot>
         </table>
 
         <div class="container">
             <div class="row">
                 <div class="col offset-5">
-                    <button class="btn btn-info order">Order</button>
+                    <button class="btn btn-info order" id="order">Order</button>
                 </div>
             </div>
         </div>
@@ -45,13 +57,18 @@
 
     <script src="../jquery.min.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="count.js"></script>
     <script>
         $(document).ready(function () {
-            let itemString = localStorage.getItem('shops');
-            if (itemString) {
+            count();
+            getData();
+            function getData(){
+                let itemString = localStorage.getItem('shops');
+                if (itemString) {
                 let itemArray = JSON.parse(itemString); 
                 let j =1;
-                let data = '';  
+                let data = '';
+                let total = 0;
                 if (itemArray != 0) {
                     let count = itemArray.length;
                     // let count = 0;
@@ -66,18 +83,73 @@
                                 <td>${j++}</td>
                                 <td>${v.item_name}</td>
                                 <td>${v.item_price}</td>
-                                <td><button class="bt">+</button> ${v.qty} <button class="bt">-</button></td>
-                                <td>${v.item_price * v.qty} MMK</td>
+                                <td><button class="btn btn-sm btn-outline-secondary min" data-item_i="${i}">-</button> ${v.qty} <button class="btn btn-sm btn-outline-secondary sum" data-item_i="${i}">+</button></td>
+                                <td class="price">${v.item_price * v.qty} MMK</td>
                         </tr>`
+                    total += v.item_price * v.qty;
                 })
-                let total = 0;
-                total = `<tr>
+                data += `<tr>
                         <td colspan="4" class="total">Total</td>
-                        <td></td>
+                        <td>${total} MMK</td>
                         </tr>`
+    
                 $('#tbody').html(data);
-                $('#tfoot').html(total);
+            }else{
+                let data = '';
+                $('#tbody').html(data);
             }
+
+            }
+
+            $('#tbody').on('click', '.min',function(){
+                //alert('Hi')
+                let item_i = $(this).data('item_i');
+                let itemStr = localStorage.getItem('shops');
+                if(itemStr){
+                    let itemArr = JSON.parse(itemStr);
+
+                    $.each(itemArr, function(i,v){
+                        if(item_i == i){
+                            v.qty --;
+                            if(v.qty == 0){
+                                itemArr.splice(item_i,1);
+                            }
+                        }
+                    })
+
+                    let itemData = JSON.stringify(itemArr);
+                    localStorage.setItem('shops',itemData);
+                    count();
+                    getData();
+                }
+            });
+
+            $('#tbody').on('click', '.sum',function(){
+                //alert('Hi')
+                let item_i = $(this).data('item_i');
+                let itemStr = localStorage.getItem('shops');
+                if(itemStr){
+                    let itemArr = JSON.parse(itemStr);
+
+                    $.each(itemArr, function(i,v){
+                        if(item_i == i){
+                            v.qty ++;
+                        }
+                    })
+
+                    let itemData = JSON.stringify(itemArr);
+                    localStorage.setItem('shops',itemData);
+                    count();
+                    getData();
+                }
+            });
+
+            $('#order').click(function (e) { 
+                e.preventDefault();
+                localStorage.clear();
+                count();
+                getData();
+            });
 
             
         });

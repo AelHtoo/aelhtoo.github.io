@@ -14,14 +14,6 @@
     margin-left: 50px;
 }
 
-.bt{
-    display: inline-block;
-    padding : 3px;
-    vertical-align: middle;
-    width: 30px;
-    border-radius: 3px;
-}
-
 .total{
     text-align: center;
     font-weight: bolder;
