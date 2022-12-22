@@ -41,6 +41,13 @@
     }
 }
 
+/* slider */
+.promotion{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 /* new arrival */
 .divided{
     width: 100px;
@@ -213,4 +220,120 @@ h2{
 /* footer */
 .text_secondary{
     color: #949090;
+}
+
+/* login */
+.bg-secondary{
+    background-image: url(Image/bgimg.webp);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+.bg-secondary .container{
+    opacity: 0.8;
+}
+
+/* promotion */
+#demo{
+    background-color: rgb(202, 8, 8);
+}
+
+/* product */
+.button_left{
+    border: 1px solid rgb(230, 108, 128);
+    background-color: white;
+    color: rgb(230, 108, 128);
+    padding: 10px;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.button_right{
+    border: 1px solid rgb(40, 107, 40);
+    background-color: white;
+    color: rgb(40, 107, 40);
+    padding: 10px;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.button_left:hover{
+    background-color:  rgb(230, 108, 128);
+    color: white;
+}
+
+.button_right:hover{
+    background-color: rgb(40, 107, 40);
+    color: white;
+}
+
+/* cart */
+.total{
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* detail */
+
+.round{
+    border:1px solid black;
+    width: 36px;
+    height: 36px;
+    text-align:center;
+    display:inline-block;
+    margin:2px 3px;
+    border-radius: 50%;
+    background-color:white;
+}
+
+.color1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:red;
+    border:1px solid #7c757547;
+    display:inline-block;
+    margin:0px 3px;
+    position:relative;
+    top:2px;
+    right:1px;
+}
+
+.color2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:white;
+    border:1px solid #7c757547;
+    display:inline-block;
+    margin:0px 3px;
+    position:relative;
+    top:2px;
+    right:1px;
+}
+
+.color3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:black;
+    border:1px solid #7c757547;
+    display:inline-block;
+    margin:0px 3px;
+    position:relative;
+    top:2px;
+    right:1px;
+}
+
+.color4{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:green;
+    border:1px solid #7c757547;
+    display:inline-block;
+    margin:0px 3px;
+    position:relative;
+    top:2px;
+    right:1px;
 }

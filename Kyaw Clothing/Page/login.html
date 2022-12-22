@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../custom.css">
+    <link rel="icon" href="../Image/download.png">
+</head>
+<body>
+    <!-- nav bar start -->
+    <div class="sticky-top" id="nav_show">
+        <nav class="bg-danger">
+            <div class="container">
+                <div class="row text-white">
+                    <div class="col-6">
+                        <small>
+                            <span class="d-none d-md-inline d-inline-block"><i class="fa-solid fa-envelope"></i>&nbsp; contact@alhtoonaw.com</span>
+                            <span class="ps-3"><i class="fa-solid fa-square-phone"></i>&nbsp; +959771623210</span>
+                        </small>
+                    </div>
+                    <div class="col-6 text-end">
+                        <small>
+                            Follow Us&nbsp; : <a href="" class="text-white ps-2"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="" class="text-white ps-2"><i class="fa-brands fa-viber"></i></a>
+                                        <a href="" class="text-white ps-2"><i class="fa-brands fa-instagram"></i></a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md shadow-sm navbar-light bg-light">
+            <div class="container">
+                <img src="../image/download.png" alt="" width="70px">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="product.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">Product</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="men.html" class="dropdown-item">Men</a></li>
+                                <li><a href="women.html" class="dropdown-item">Women</a></li>
+                                <li><a href="kids.html" class="dropdown-item">Kids</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="promotion.html" class="nav-link">Promotion</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item active"><a href="login.html" class="nav-link">Login</a></li>
+                        <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                        <li class="nav-item"><a href="cart.html" class="nav-link position-relative"><i class="fa-solid fa-cart-shopping fa-xl"></i><span class="position-absolute top-2 start-90 translate-middle badge rounded-pill bg-danger" id="count_number"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- nav bar end -->
+
+    <!-- login -->
+    <div class="bg-secondary">
+        <div class="container py-5 d-flex justify-content-center" >
+            <div class="col-md-5 p-4 pb-4 bg-light rounded">
+                <form action="" id="login_form">
+                    <h3 class="text-center pb-3">Login</h3>
+                    <div class="alert alert-danger" role="alert" id="error_msg">
+                        Invalid Email or Password !!
+                    </div>
+                    <div class="alert alert-success" role="alert" id="success_msg">
+                        Successfully Logged In !!
+                    </div>
+                    <div>
+                        <label for="email" class="h5">Email :</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="mt-4">
+                        <label for="password" class="h5">Password :</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password"><br>
+                    </div>              
+                    <div class="d-grid gap-2">
+                        <button type="button" id="btn_summit" class="btn btn-dark btn-block mt-3">LOGIN</button>
+                        <a href="" class="text-dark text-center">Forget Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="bg-dark container-fluid">
+        <div class="container text_secondary py-5">
+           <div class="row">
+                <div class="col-12 col-md-4">
+                    <h4 class="mt-0 ">Kyaw Fashion</h4>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, minima unde a perferendis ex perspiciatis, voluptatum id tenetur excepturi culpa sequi molestiae blanditiis dolor eos nemo impedit, ipsum modi nam!</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <a href="" class="nav-link ps-5 py-2">Home</a>
+                    <a href="" class="nav-link ps-5 py-2">About</a>
+                    <a href="" class="nav-link ps-5 py-2">Contact</a>
+                </div>
+                <div class="col-12 col-md-2">
+                    <a href="" class="nav-link ps-5 py-2">Product</a>
+                    <a href="" class="nav-link ps-5 py-2">News</a>
+                    <a href="" class="nav-link ps-5 py-2">Promotion</a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="col-11">
+                            30th x 58th Street, ChanAyeTharZan Mandalay
+                        </div>
+                    </div>
+                    <p class="pt-3">
+                        <i class="fa-solid fa-phone pe-2"></i> +959 771623210
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope pe-2"></i> kyawzinaung01tech@gmail.com
+                    </p>
+                </div>
+           </div>
+        </div>
+        <p class="text-center text_secondary my-0 pb-3" >Designed By @ Kyaw Zin Aung</p>
+    </footer>
+    
+    <script src="../jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../Fontawesome/js/all.min.js"></script>
+    <script src="addtocart.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#error_msg").hide();
+            $('#success_msg').hide();
+            $("#btn_summit").click(function (e) { 
+                e.preventDefault();
+                //alert('Hello')
+                let email = $("#email").val();
+                let password = $("#password").val();
+
+                if (email === "text@gmail.com" && password === "123456") {
+                    $('#error_msg').hide();
+                    $('#success_msg').show();
+                }else{
+                    $('#error_msg').show();
+                    $('#success_msg').hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

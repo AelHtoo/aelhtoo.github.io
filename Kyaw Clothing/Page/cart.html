@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../custom.css">
+    <link rel="icon" href="../Image/download.png">
+</head>
+<body>
+    <!-- nav bar start -->
+    <div class="sticky-top" id="nav_show">
+        <nav class="bg-danger">
+            <div class="container">
+                <div class="row text-white">
+                    <div class="col-6">
+                        <small>
+                            <span class="d-none d-md-inline d-inline-block"><i class="fa-solid fa-envelope"></i>&nbsp; contact@alhtoonaw.com</span>
+                            <span class="ps-3"><i class="fa-solid fa-square-phone"></i>&nbsp; +959771623210</span>
+                        </small>
+                    </div>
+                    <div class="col-6 text-end">
+                        <small>
+                            Follow Us&nbsp; : <a href="" class="text-white ps-2"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="" class="text-white ps-2"><i class="fa-brands fa-viber"></i></a>
+                                        <a href="" class="text-white ps-2"><i class="fa-brands fa-instagram"></i></a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md shadow-sm navbar-light bg-light">
+            <div class="container">
+                <img src="../image/download.png" alt="" width="70px">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="product.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">Product</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="men.html" class="dropdown-item">Men</a></li>
+                                <li><a href="women.html" class="dropdown-item">Women</a></li>
+                                <li><a href="kids.html" class="dropdown-item">Kids</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="promotion.html" class="nav-link">Promotion</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                        <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                        <li class="nav-item active"><a href="cart.html" class="nav-link position-relative"><i class="fa-solid fa-cart-shopping fa-xl"></i><span class="position-absolute top-2 start-90 translate-middle badge rounded-pill bg-danger" id="count_number"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- nav bar end -->
+
+    <!-- table -->
+    <div class="table-responsive my-4">
+        <table class="table table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>No.</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                    <th>Qty</th>
+                    <th>Sub-Total</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+        <div class="container">
+            <div class="row">
+                <div class="col offset-5">
+                    <button class="btn btn-success order" id="order">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark container-fluid mt-5">
+        <div class="container text_secondary py-5">
+           <div class="row">
+                <div class="col-12 col-md-4">
+                    <h4 class="mt-0 ">Kyaw Fashion</h4>
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, minima unde a perferendis ex perspiciatis, voluptatum id tenetur excepturi culpa sequi molestiae blanditiis dolor eos nemo impedit, ipsum modi nam!</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <a href="" class="nav-link ps-5 py-2">Home</a>
+                    <a href="" class="nav-link ps-5 py-2">About</a>
+                    <a href="" class="nav-link ps-5 py-2">Contact</a>
+                </div>
+                <div class="col-12 col-md-2">
+                    <a href="" class="nav-link ps-5 py-2">Product</a>
+                    <a href="" class="nav-link ps-5 py-2">News</a>
+                    <a href="" class="nav-link ps-5 py-2">Promotion</a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="col-11">
+                            30th x 58th Street, ChanAyeTharZan Mandalay
+                        </div>
+                    </div>
+                    <p class="pt-3">
+                        <i class="fa-solid fa-phone pe-2"></i> +959 771623210
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope pe-2"></i> kyawzinaung01tech@gmail.com
+                    </p>
+                </div>
+           </div>
+        </div>
+        <p class="text-center text_secondary my-0 pb-3" >Designed By @ Kyaw Zin Aung</p>
+    </footer>
+    
+    <script src="../jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../Fontawesome/js/all.min.js"></script>
+    <script src="../slick.js"></script>
+    <script src="../custom.js"></script>
+    <script src="addtocart.js"></script>
+    <script>
+        $(document).ready(function () {
+            add();
+            get();
+            function get(){
+                let itemString = localStorage.getItem('kyawclothing');
+                let itemArray;
+                if (itemString) {
+                    itemArray = JSON.parse(itemString);
+                    let j = 1;
+                    let data = '';
+                    let total = 0;
+                    if (itemArray != 0) {
+                        let count = itemArray.length;
+                        $('#count_number').text(count);
+                    }
+                    $.each(itemArray , function(i,v){
+                        data += `<tr>
+                                    <td>${j++}</td>
+                                    <td>${v.item_name}</td>
+                                    <td>${v.item_price}</td>
+                                    <td><button class="btn btn-sm btn-outline-secondary min" data-item_i="${i}">-</button> ${v.qty} <button class="btn btn-sm btn-outline-secondary sum" data-item_i="${i}">+</button></td>
+                                    <td class="price">${v.item_price * v.qty} MMK</td>
+                            </tr>`
+                        total += v.item_price * v.qty;
+                    })
+                    data += `<tr>
+                            <td colspan="4" class="total">Total</td>
+                            <td>${total} MMK</td>
+                            </tr>`
+        
+                    $('#tbody').html(data);
+                    }else{
+                        let data = '';
+                        $('#tbody').html(data);
+                    }
+
+                }
+
+            $('#tbody').on('click', '.min',function(){
+                //alert('Hi')
+                let item_i = $(this).data('item_i');
+                let itemStr = localStorage.getItem('kyawclothing');
+                if(itemStr){
+                    let itemArr = JSON.parse(itemStr);
+
+                    $.each(itemArr, function(i,v){
+                        if(item_i == i){
+                            v.qty --;
+                            if(v.qty == 0){
+                                itemArr.splice(item_i,1);
+                            }
+                        }
+                    })
+
+                    let itemData = JSON.stringify(itemArr);
+                    localStorage.setItem('kyawclothing',itemData);
+                    add();
+                    get();
+                }
+            });
+
+            $('#tbody').on('click', '.sum',function(){
+                //alert('Hi')
+                let item_i = $(this).data('item_i');
+                let itemStr = localStorage.getItem('kyawclothing');
+                if(itemStr){
+                    let itemArr = JSON.parse(itemStr);
+
+                    $.each(itemArr, function(i,v){
+                        if(item_i == i){
+                            v.qty ++;
+                        }
+                    })
+
+                    let itemData = JSON.stringify(itemArr);
+                    localStorage.setItem('kyawclothing',itemData);
+                    add();
+                    get();
+                }
+            });
+
+            $('#order').click(function (e) { 
+                e.preventDefault();
+                localStorage.clear();
+                add();
+                get();
+            });
+        });
+    </script>
+</body>
+</html>
