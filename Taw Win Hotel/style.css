@@ -481,31 +481,30 @@
 /* room */
 
 /* booking */
-.card{
+.card1,.card2,.card3,.card4{
     border: 1px solid rgb(3, 77, 110);
     cursor: pointer;
     width: 70px;
     height: 45px;
 }
 
-.card_hover{
+.card_hover1,.card_hover2,.card_hover3,.card_hover4{
     position: relative;
 }
 
-.mark{
+.mark1,.mark2,.mark3,.mark4{
     position: absolute;
-    top: -15px;
+    top: -12px;
     left: 55px;
     display: none;
 }
 
-.card_hover:hover .mark{
+.card_hover1:hover .mark1,.card_hover2:hover .mark2,.card_hover3:hover .mark3,.card_hover4:hover .mark4{
     display: inline-block;
 }
 
-.card_hover:hover{
-    border: 1px solid green;
-    border-radius: 5px;
+.active_mark1,.active_mark2,.active_mark3,.active_mark4{
+    display: inline-block;
 }
 
 /* booking */

@@ -124,33 +124,33 @@
                             <h5>Credit Card Type :</h5>
                             <div class="row mt-3">
                                 <div class="col-3 col-lg-2">
-                                    <div class="card_hover">
-                                        <img src="../Images/cridet.png" alt="" class="card">
-                                        <div class="mark">
+                                    <div class="card_hover1">
+                                        <img src="../Images/cridet.png" alt="" class="card1">
+                                        <div class="mark1">
                                             <img src="../Images/mark.png" alt="" width="20px">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-3 col-lg-2">
-                                    <div class="card_hover">
-                                        <img src="../Images/jcb.png" alt="" class="card">
-                                        <div class="mark">
+                                    <div class="card_hover2">
+                                        <img src="../Images/jcb.png" alt="" class="card2">
+                                        <div class="mark2">
                                             <img src="../Images/mark.png" alt="" width="20px">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-3 col-lg-2">
-                                    <div class="card_hover">
-                                        <img src="../Images/CB_Logo_.png" alt="" class="card">
-                                        <div class="mark">
+                                    <div class="card_hover3">
+                                        <img src="../Images/CB_Logo_.png" alt="" class="card3">
+                                        <div class="mark3">
                                             <img src="../Images/mark.png" alt="" width="20px">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-3 col-lg-2">
-                                    <div class="card_hover">
-                                        <img src="../Images/Image-8_-KBZPay-Logo_Credit-to-KBZ.webp" alt="" class="card">
-                                        <div class="mark">
+                                    <div class="card_hover4">
+                                        <img src="../Images/Image-8_-KBZPay-Logo_Credit-to-KBZ.webp" alt="" class="card4">
+                                        <div class="mark4">
                                             <img src="../Images/mark.png" alt="" width="20px">
                                         </div>
                                     </div>
@@ -171,7 +171,7 @@
                 </div>
             </div>
         </div>
-        <center><button class="booking_button d-block" style="margin-top: 60px;">Confirm</button></center>
+        <center><button class="booking_button d-block" style="margin-top: 60px;" type="submit">Confirm</button></center>
     </div>
     <!-- booking end-->
 
@@ -217,5 +217,33 @@
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../Fontawesome/js/all.min.js"></script>
     <script src="../jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.card_hover1').on('click',function(){
+                $('.mark1').toggleClass('active_mark1');
+                $('.mark2').removeClass('active_mark2');
+                $('.mark3').removeClass('active_mark3');
+                $('.mark4').removeClass('active_mark4');
+            });
+            $('.card_hover2').on('click',function(){
+                $('.mark2').toggleClass('active_mark2');
+                $('.mark1').removeClass('active_mark1');
+                $('.mark3').removeClass('active_mark3');
+                $('.mark4').removeClass('active_mark4');
+            });
+            $('.card_hover3').on('click',function(){
+                $('.mark3').toggleClass('active_mark3');
+                $('.mark1').removeClass('active_mark1');
+                $('.mark2').removeClass('active_mark2');
+                $('.mark4').removeClass('active_mark4');
+            });
+            $('.card_hover4').on('click',function(){
+                $('.mark4').toggleClass('active_mark4');
+                $('.mark1').removeClass('active_mark1');
+                $('.mark2').removeClass('active_mark2');
+                $('.mark3').removeClass('active_mark3');
+            });
+        });
+    </script>
 </body>
 </html>
